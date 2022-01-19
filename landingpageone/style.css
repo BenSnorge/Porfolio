@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
+
+:root {
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1.3rem 1.3rem;
+  max-width: var(--max-width);
+}
+
+.nav-container ul {
+  display: flex;
+}
+
+.nav-container ul li a {
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.hero {
+  background: #fff;
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  height: 700px;
+  width: 100vw;
+  background: black;
+}
+
+.header img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.hero-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  border: 2px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000;
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+  cursor: pointer;
+  transition: all 1.5s;
+}
+
+.btn a {
+  color: #000;
+}
+
+.btn:hover {
+  border: 2px #fff solid;
+  background: #000;
+  color: #fff;
+}
+
+.btn:hover a {
+  color: #fff;
+}
+
+.btn-dark {
+  border: 2px #ffcc00 solid;
+  margin: 15px 0 0 0;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.card {
+  display: flex;
+  border-radius: 5px;
+  height: 400px;
+  width: 300px;
+  /* background: rgb(227, 225, 225); */
+  background: #000;
+  color: #fff;
+  padding: 30px;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  height: 425px;
+  width: 325px;
+  box-shadow: 15px 20px rgb(208, 208, 208);
+  margin-top: 15px;
+  outline: 5px solid #ffcc00;
+}
+
+.gold {
+  color: #ffcc00;
+}
+
+.quote {
+  margin: 100px 0 100px 0;
+  padding: 70px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.about {
+  display: flex;
+
+  overflow-x: hidden;
+  background: #000;
+}
+
+.about-content {
+  background: #fff;
+  padding: 50px;
+  margin: 50px;
+  width: 50%;
+}
+
+.about-img {
+  margin: 50px;
+  width: 450px;
+}
+
+.image {
+  width: 100%;
+  object-fit: fill;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d2d2d2;
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact {
+  margin: 100px 0 100px 0;
+}
+
+.contact form input,
+label,
+textarea {
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 50%;
+}
+
+.contact form input {
+  padding: 10px;
+}
+
+.contact form input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+}
+
+.contact-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-description h1 {
+  margin: 50px;
+}
+
+.contact-description p {
+  font-size: 20px;
+  padding: 30px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.service-card {
+  width: 400px;
+  height: 600px;
+  margin: 2px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+}
+
+.card-header {
+  background-image: linear-gradient(to right, #b10843, #c70061);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.price {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.service-btn {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  padding: 10px 50px 10px 50px;
+  border: 1px solid #000;
+}
+
+.submit-btn {
+  margin-left: 45%;
+}
+
+@media (max-width: 800px) {
+  .brand {
+    display: none;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about-img {
+    display: none;
+  }
+  .info-container {
+    flex-direction: column;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .submit-btn {
+    margin-left: 32%;
+  }
+  .contact {
+    margin: 100px 0 20px 0;
+  }
+}
+.section {
+  opacity: 1;
+  transition: all .7s ease-in;
+}
+
+.section--hidden {
+  opacity: 0;
+  }

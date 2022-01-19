@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Benjamin Sparwasser</title>
+</head>
+
+<body>
+  <!-- Navbar-->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <ul>
+        <li><a class="brand" href="index.html">Benjamin Sparwasser</a></li>
+      </ul>
+
+      <ul id="nav-ul" class="nav-ul">
+        <li><a href="#about" class="nav__link">About Me</a></li>
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero section-->
+  <section id="hero">
+    <div class="hero">
+      <div class="hero-header">
+        <h1>Hi, I'm Benjamin,<br> A Web Developer.</h1>
+      </div>
+
+      <div class="hero-content">
+        <a href="#about" class="btn btn1 nav__link">About Me</a>
+        <a href="#work" id="project-btn" class="btn btn2 nav__link">My Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="columns">
+
+      <div class="col1">
+        <h2 class="col1__title">About me</h2>
+        <p>I'm a self taught developer. As someone who always needs to learn something new to satisfy my curiosity, web
+          development seems like the right choise for a career. It is also a lot of fun!
+        </p>
+      </div>
+      <div class="col2">
+        <img
+          src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="container">
+      <h1 class="work__header">My Projects</h1>
+      <div class="project">
+        <div class="project__img">
+          <img src="./img/Bildschirmfoto am 2022-01-18 um 16.21.46.png" alt="">
+        </div>
+        <div class="project__content">
+          <h3>Shopify Theme</h3>
+          <p>A Shopify theme that I build using Next.js and Bootstrap 5. The user can choose between 4 different headers
+            with either 2 sets of menus or just one, 2 hero sections with a call to action box that can be placed in 9
+            different positions or alternatively a header underneath. A custom collection and footer section. To view a
+            live demo use the Password: 12345</p>
+          <div class="project__content-links">
+            <a class="project__btn" href="https://oroben.myshopify.com/">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project__img">
+          <img src="./img/Bildschirmfoto am 2022-01-19 um 13.53.52.png" alt="">
+        </div>
+        <div class="project__content">
+          <h3>Landing Page With Modal</h3>
+          <p>A landing page with a modal that contains a contact form. I wanted to build something similar to the
+            Shopify landing page.</p>
+          <div class="project__content-links">
+            <a href="./landingpagetwo/index.html" target="_blank">View</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project__img">
+          <img src="./img/Bildschirmfoto am 2022-01-19 um 13.31.48.png" alt="">
+        </div>
+        <div class="project__content">
+          <h3>Portfolio Website For A Personal Coach</h3>
+          <p>This is a very simple website for a ficticous life coach. Explaining what services he offers and how to get
+            in touch. This is one of the first projects I build on my own.</p>
+          <div class="project__content-links">
+            <a href="./landingpageone/index.html" target="_blank">View</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
