@@ -18,8 +18,8 @@
       </ul>
 
       <ul id="nav-ul" class="nav-ul">
-        <li><a href="#about" class="nav__link">About Me</a></li>
         <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#about" class="nav__link">About Me</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </div>
@@ -33,32 +33,17 @@
       </div>
 
       <div class="hero-content">
-        <a href="#about" class="btn btn1 nav__link">About Me</a>
-        <a href="#work" id="project-btn" class="btn btn2 nav__link">My Projects</a>
+        <a href="#work" class="btn btn1 nav__link">Projects</a>
+        <a href="#about" id="project-btn" class="btn btn2 nav__link">About Me</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <div class="columns">
-
-      <div class="col1">
-        <h2 class="col1__title">About me</h2>
-        <p>I'm a self taught developer. As someone who always needs to learn something new to satisfy my curiosity, web
-          development seems like the right choise for a career. It is also a lot of fun!
-        </p>
-      </div>
-      <div class="col2">
-        <img
-          src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-          alt="">
-      </div>
-    </div>
-  </section>
-
+  <p class="about-p about-p--right">My</p>
+  <p class="about-p about-p">Projects</p>
   <section id="work" class="section">
     <div class="container">
-      <h1 class="work__header">My Projects</h1>
+      <h1 class="work__header"></h1>
       <div class="project">
         <div class="project__img">
           <img src="./img/Bildschirmfoto am 2022-01-18 um 16.21.46.png" alt="">
@@ -70,7 +55,7 @@
             different positions or alternatively a header underneath. A custom collection and footer section. To view a
             live demo use the Password: 12345</p>
           <div class="project__content-links">
-            <a class="project__btn" href="https://oroben.myshopify.com/">View</a>
+            <a class="project__btn" href="https://oroben.myshopify.com/" target="_blank">View</a>
           </div>
         </div>
       </div>
@@ -83,7 +68,7 @@
           <p>A landing page with a modal that contains a contact form. I wanted to build something similar to the
             Shopify landing page.</p>
           <div class="project__content-links">
-            <a href="./landingpagetwo/index.html" target="_blank">View</a>
+            <a class="project__btn" href="./landingpagetwo/index.html" target="_blank">View</a>
 
           </div>
         </div>
@@ -97,13 +82,61 @@
           <p>This is a very simple website for a ficticous life coach. Explaining what services he offers and how to get
             in touch. This is one of the first projects I build on my own.</p>
           <div class="project__content-links">
-            <a href="./landingpageone/index.html" target="_blank">View</a>
+            <a class="project__btn" href="./landingpageone/index.html" target="_blank">View</a>
 
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <p class="about-p">About</p>
+  <p class="about-p about-p--right">Me</p>
+
+
+
+  <section id="about" class="section">
+
+    <div class="columns">
+
+      <div class="col1">
+        <h2 class="col1__title"></h2>
+        <p>I'm a self taught developer. As someone who always needs to learn something new to satisfy my curiosity, web
+          development seems like the right choise for a career. It is also a lot of fun!
+        </p>
+      </div>
+      <div class="col2">
+        <img
+          src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <p class="about-p">Message</p>
+  <p class="about-p">Me</p>
+  <section class="section" id="contact">
+    <div class="form-container">
+      <form class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input class="submit-btn" type="submit" value="Submit">
+
+      </form>
+
+    </div>
+  </section>
+
+
 
 
 
