@@ -301,7 +301,9 @@ input[type=text], input[type=email], input[type=submit], textarea {
   .about-p {
     font-size: 100px;
   }
-  
+  .project__img {
+    width: 400px
+  }
 } 
 
 @media (max-width: 768px) {
