@@ -46,7 +46,7 @@ tl.addLabel("btns", "<")
   document.querySelector('.nav-ul').addEventListener('click', function(e){
   e.preventDefault();
 
-  // Matching strategy
+  
   if(e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     
@@ -57,7 +57,7 @@ tl.addLabel("btns", "<")
 document.querySelector('.hero-content').addEventListener('click', function(e){
   e.preventDefault();
 
-  // Matching strategy
+ 
   if(e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     
@@ -78,7 +78,7 @@ document.querySelector('.hero-content').addEventListener('click', function(e){
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.3
+  threshold: 0.2
 });
 allSections.forEach(function (section){
 sectionObserver.observe(section);
